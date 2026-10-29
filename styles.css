@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.calculadora-contenedor {
+    background: #ffffff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 16px;
+    width: 650px;
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+}
+
+.pantalla {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+    text-align: right;
+}
+
+.pantalla-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #70757a;
+    font-size: 13px;
+    min-height: 20px;
+}
+
+.icono-historial {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.texto-principal {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 34px;
+    color: #202124;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 4px;
+    box-shadow: none;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 12px 0;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f1f3f4;
+    color: #3c4043;
+    outline: none;
+    user-select: none;
+    transition: background-color 0.1s;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #e8eaed;
+    border-color: #bdc1c6;
+}
+
+.btn:disabled {
+    color: #70757a;
+    cursor: default;
+    opacity: 0.8;
+}
+
+.btn-numero {
+    background-color: #f1f3f4;
+    font-weight: 500;
+}
+
+.btn-operador, .btn-funcion, .btn-cientifico {
+    background-color: #dadce0;
+}
+
+.btn-modo {
+    background-color: #f1f3f4;
+    font-size: 12px;
+    color: #70757a;
+}
+
+.btn-igual {
+    background-color: #4285f4;
+    color: #ffffff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+}
+
+.btn-igual:hover {
+    background-color: #3367d6;
+}

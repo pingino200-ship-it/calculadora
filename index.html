@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Chrome - TypeScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora-contenedor">
+        <div class="pantalla">
+            <div class="pantalla-superior">
+                <span class="icono-historial">🕒</span>
+                <span id="pantalla-parcial" class="texto-parcial">Ans = 0</span>
+            </div>
+            <input type="text" id="pantalla-principal" class="texto-principal" value="0" autocomplete="off" spellcheck="false">
+        </div>
+        
+        <div id="botones-grid" class="botones">
+            <button class="btn btn-modo" disabled>Rad | Deg</button>
+            <button class="btn btn-cientifico" disabled>x!</button>
+            <button class="btn btn-operador" data-valor="(">(</button>
+            <button class="btn btn-operador" data-valor=")">)</button>
+            <button class="btn btn-operador" data-valor="%">%</button>
+            <button class="btn btn-funcion" data-accion="borrar">⌫</button>
+            <button class="btn btn-funcion" data-accion="limpiar">CE</button>
+
+            <button class="btn btn-cientifico" disabled>Inv</button>
+            <button class="btn btn-cientifico" disabled>sin</button>
+            <button class="btn btn-cientifico" disabled>ln</button>
+            <button class="btn btn-numero" data-valor="7">7</button>
+            <button class="btn btn-numero" data-valor="8">8</button>
+            <button class="btn btn-numero" data-valor="9">9</button>
+            <button class="btn btn-operador" data-valor="/">÷</button>
+
+            <button class="btn btn-cientifico" disabled>π</button>
+            <button class="btn btn-cientifico" disabled>cos</button>
+            <button class="btn btn-cientifico" disabled>log</button>
+            <button class="btn btn-numero" data-valor="4">4</button>
+            <button class="btn btn-numero" data-valor="5">5</button>
+            <button class="btn btn-numero" data-valor="6">6</button>
+            <button class="btn btn-operador" data-valor="*">×</button>
+
+            <button class="btn btn-cientifico" disabled>e</button>
+            <button class="btn btn-cientifico" disabled>tan</button>
+            <button class="btn btn-operador" data-valor="√">√</button>
+            <button class="btn btn-numero" data-valor="1">1</button>
+            <button class="btn btn-numero" data-valor="2">2</button>
+            <button class="btn btn-numero" data-valor="3">3</button>
+            <button class="btn btn-operador" data-valor="-">−</button>
+
+            <button class="btn btn-cientifico" disabled>Ans</button>
+            <button class="btn btn-cientifico" disabled>EXP</button>
+            <button class="btn btn-operador" data-valor="^">x<sup>y</sup></button>
+            <button class="btn btn-numero" data-valor="0">0</button>
+            <button class="btn btn-numero" data-valor=".">.</button>
+            <button class="btn btn-igual" data-accion="calcular">=</button>
+            <button class="btn btn-operador" data-valor="+">+</button>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
